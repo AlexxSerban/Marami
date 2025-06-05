@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="ro">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Camere - Hotel Marami</title>
+  <meta name="theme-color" content="#FAFAFA">
+  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
+</head>
+<body>
+  <header class="header" id="mainHeader">
+    <div class="container header-content">
+      <div class="logo">Hotel Marami</div>
+      <button class="burger" id="burgerBtn" aria-label="Deschide meniul" aria-expanded="false" aria-controls="navMenu">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+      <nav class="nav" id="navMenu">
+        <a href="index.html">Acasă</a>
+        <a href="despre-noi.html">Despre Noi</a>
+        <a href="camere.html" class="active">Camere</a>
+        <a href="meniu.html">Restaurant</a>
+        <div class="nav-contact">
+          <span class="phone-number">+40 722 123 456</span>
+          <a href="#rezerva" class="btn-accent rezervare-btn">Rezervă Acum</a>
+        </div>
+      </nav>
+      <div class="header-right">
+        <span class="phone-number">+40 722 123 456</span>
+        <a href="#rezerva" class="btn-accent rezervare-btn">Rezervă Acum</a>
+      </div>
+    </div>
+  </header>
+  <main class="rooms-list-main">
+    <section class="rooms-list-hero">
+      <h1>Camerele noastre</h1>
+      <div class="rooms-list-categories">
+        <button class="room-cat-btn active" data-cat="toate">Toate</button>
+        <button class="room-cat-btn" data-cat="standard">Dublă Standard</button>
+        <button class="room-cat-btn" data-cat="deluxe">Deluxe</button>
+        <button class="room-cat-btn" data-cat="premium">Premium</button>
+      </div>
+    </section>
+    <section class="rooms-list-grid-section">
+      <div class="rooms-list-vertical">
+        <div class="room-split-card" data-cat="standard">
+          <div class="room-split-img">
+            <img src="img/room1.jpg" alt="Camera Standard">
+          </div>
+          <div class="room-split-info">
+            <div class="room-split-price">260 lei <span>/ noapte</span></div>
+            <h2>Camera Standard</h2>
+            <div class="room-split-details">
+              <span class="room-detail-item"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#b97c5a" stroke-width="2"><rect x="3" y="10" width="18" height="7" rx="2"/><path d="M7 10V7a5 5 0 0 1 10 0v3"/></svg> 25 m²</span>
+              <span class="room-detail-item"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#b97c5a" stroke-width="2"><rect x="2" y="14" width="20" height="6" rx="2"/><path d="M6 14V10a6 6 0 0 1 12 0v4"/></svg> 1 pat matrimonial</span>
+              <span class="room-detail-item"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#b97c5a" stroke-width="2"><rect x="3" y="7" width="18" height="13" rx="2"/><path d="M8 7V5a4 4 0 0 1 8 0v2"/></svg> 1 baie</span>
+            </div>
+            <p>Confort și eleganță într-un spațiu generos, ideal pentru cupluri sau călătorii solo.</p>
+            <a href="#rezerva" class="room-detail-link">Room Detail</a>
+          </div>
+        </div>
+        <div class="room-split-card" data-cat="deluxe">
+          <div class="room-split-img">
+            <img src="img/room2.jpg" alt="Camera Deluxe">
+          </div>
+          <div class="room-split-info">
+            <div class="room-split-price">320 lei <span>/ noapte</span></div>
+            <h2>Camera Deluxe</h2>
+            <div class="room-split-details">
+              <span class="room-detail-item"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#b97c5a" stroke-width="2"><rect x="3" y="10" width="18" height="7" rx="2"/><path d="M7 10V7a5 5 0 0 1 10 0v3"/></svg> 32 m²</span>
+              <span class="room-detail-item"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#b97c5a" stroke-width="2"><rect x="2" y="14" width="20" height="6" rx="2"/><path d="M6 14V10a6 6 0 0 1 12 0v4"/></svg> 1 pat king size</span>
+              <span class="room-detail-item"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#b97c5a" stroke-width="2"><rect x="3" y="7" width="18" height="13" rx="2"/><path d="M8 7V5a4 4 0 0 1 8 0v2"/></svg> 1 baie</span>
+            </div>
+            <p>Lux și spațiu într-un cadru montan, cu vedere superbă și facilități premium.</p>
+            <a href="#rezerva" class="room-detail-link">Room Detail</a>
+          </div>
+        </div>
+        <div class="room-split-card" data-cat="premium">
+          <div class="room-split-img">
+            <img src="img/room3.jpg" alt="Camera Premium">
+          </div>
+          <div class="room-split-info">
+            <div class="room-split-price">390 lei <span>/ noapte</span></div>
+            <h2>Camera Premium</h2>
+            <div class="room-split-details">
+              <span class="room-detail-item"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#b97c5a" stroke-width="2"><rect x="3" y="10" width="18" height="7" rx="2"/><path d="M7 10V7a5 5 0 0 1 10 0v3"/></svg> 40 m²</span>
+              <span class="room-detail-item"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#b97c5a" stroke-width="2"><rect x="2" y="14" width="20" height="6" rx="2"/><path d="M6 14V10a6 6 0 0 1 12 0v4"/></svg> 1 pat king size + relaxare</span>
+              <span class="room-detail-item"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#b97c5a" stroke-width="2"><rect x="3" y="7" width="18" height="13" rx="2"/><path d="M8 7V5a4 4 0 0 1 8 0v2"/></svg> 1 baie</span>
+            </div>
+            <p>Experiență de lux cu vedere panoramică, spațiu generos și dotări exclusive.</p>
+            <a href="#rezerva" class="room-detail-link">Room Detail</a>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+  <script src="script.js"></script>
+</body>
+</html> 

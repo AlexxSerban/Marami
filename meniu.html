@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="ro">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Meniu Restaurant - Hotel Marami</title>
+  <meta name="theme-color" content="#FAFAFA">
+  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
+</head>
+<body>
+  <header class="header" id="mainHeader">
+    <div class="container header-content">
+      <div class="logo">Hotel Marami</div>
+      <button class="burger" id="burgerBtn" aria-label="Deschide meniul" aria-expanded="false" aria-controls="navMenu">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+      <nav class="nav" id="navMenu">
+        <a href="index.html">Acasă</a>
+        <a href="despre-noi.html">Despre Noi</a>
+        <a href="#camere">Camere</a>
+        <a href="meniu.html" class="active">Restaurant</a>
+        <div class="nav-contact">
+          <span class="phone-number">+40 722 123 456</span>
+          <a href="#rezerva" class="btn-accent rezervare-btn">Rezervă Acum</a>
+        </div>
+      </nav>
+      <div class="header-right">
+        <span class="phone-number">+40 722 123 456</span>
+        <a href="#rezerva" class="btn-accent rezervare-btn">Rezervă Acum</a>
+      </div>
+    </div>
+  </header>
+  <main class="menu-main">
+    <section class="menu-hero-nou">
+      <h1>Restaurant</h1>
+      <p class="menu-hero-desc">Savurează preparate proaspete, cu ingrediente locale, într-o atmosferă elegantă la Hotel Marami. Bucură-te de mic dejun, prânz și cină cu vedere spre munte.</p>
+      <div class="menu-hero-info">
+        <div class="menu-hero-block">
+          <div class="menu-hero-label">Program</div>
+          <div class="menu-hero-value">Luni – Duminică</div>
+          <div class="menu-hero-value">07:30 – 22:00</div>
+        </div>
+        <div class="menu-hero-block">
+          <div class="menu-hero-label">Gama de prețuri</div>
+          <div class="menu-hero-value">15 – 80 lei</div>
+        </div>
+        <div class="menu-hero-block">
+          <a href="#rezerva" class="btn-accent">Rezervă o masă</a>
+        </div>
+      </div>
+    </section>
+    <section class="menu-gallery-nou">
+      <div class="menu-gallery-grid">
+        <img src="img/restaurant1.jpg" alt="Restaurant Hotel Marami">
+        <img src="img/restaurant2.jpg" alt="Meniu Hotel Marami">
+        <img src="img/restaurant3.jpg" alt="Terasa Hotel Marami">
+      </div>
+    </section>
+    <section class="menu-highlights">
+      <div class="menu-highlights-flex">
+        <div class="menu-highlight-col">
+          <div class="menu-highlight-header">
+            <div class="menu-highlight-label">Mic dejun</div>
+            <div class="menu-highlight-time">08:00 – 11:00</div>
+          </div>
+          <div class="menu-highlight-list">
+            <div class="menu-highlight-row">
+              <img src="img/breakfast1.jpg" alt="Omletă țărănească">
+              <div>
+                <div class="menu-highlight-title">Omletă țărănească</div>
+                <div class="menu-highlight-ingredients">Ouă, șuncă, ceapă verde, ardei, brânză</div>
+              </div>
+            </div>
+            <div class="menu-highlight-row">
+              <img src="img/breakfast2.jpg" alt="Clătite cu dulceață">
+              <div>
+                <div class="menu-highlight-title">Clătite cu dulceață</div>
+                <div class="menu-highlight-ingredients">Clătite, dulceață de casă, zahăr pudră</div>
+              </div>
+            </div>
+            <div class="menu-highlight-row">
+              <img src="img/breakfast3.jpg" alt="Iaurt cu fructe">
+              <div>
+                <div class="menu-highlight-title">Iaurt cu fructe</div>
+                <div class="menu-highlight-ingredients">Iaurt, fructe proaspete, miere</div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="menu-highlight-col">
+          <div class="menu-highlight-header">
+            <div class="menu-highlight-label">Prânz</div>
+            <div class="menu-highlight-time">12:00 – 15:00</div>
+          </div>
+          <div class="menu-highlight-list">
+            <div class="menu-highlight-row">
+              <img src="img/lunch1.jpg" alt="Ciorbă de văcuță">
+              <div>
+                <div class="menu-highlight-title">Ciorbă de văcuță</div>
+                <div class="menu-highlight-ingredients">Vită, legume, smântână, verdeață</div>
+              </div>
+            </div>
+            <div class="menu-highlight-row">
+              <img src="img/lunch2.jpg" alt="Piept de pui la grătar">
+              <div>
+                <div class="menu-highlight-title">Piept de pui la grătar</div>
+                <div class="menu-highlight-ingredients">Piept de pui, legume la grătar, sos de iaurt</div>
+              </div>
+            </div>
+            <div class="menu-highlight-row">
+              <img src="img/lunch3.jpg" alt="Salată grecească">
+              <div>
+                <div class="menu-highlight-title">Salată grecească</div>
+                <div class="menu-highlight-ingredients">Roșii, castraveți, brânză feta, măsline</div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="menu-highlight-col">
+          <div class="menu-highlight-header">
+            <div class="menu-highlight-label">Cină</div>
+            <div class="menu-highlight-time">18:00 – 22:00</div>
+          </div>
+          <div class="menu-highlight-list">
+            <div class="menu-highlight-row">
+              <img src="img/dinner1.jpg" alt="Păstrăv la cuptor">
+              <div>
+                <div class="menu-highlight-title">Păstrăv la cuptor</div>
+                <div class="menu-highlight-ingredients">Păstrăv, lămâie, legume, ierburi aromate</div>
+              </div>
+            </div>
+            <div class="menu-highlight-row">
+              <img src="img/dinner2.jpg" alt="Papanași cu smântână">
+              <div>
+                <div class="menu-highlight-title">Papanași cu smântână</div>
+                <div class="menu-highlight-ingredients">Brânză dulce, smântână, dulceață de afine</div>
+              </div>
+            </div>
+            <div class="menu-highlight-row">
+              <img src="img/dinner3.jpg" alt="Paste cu sos de roșii">
+              <div>
+                <div class="menu-highlight-title">Paste cu sos de roșii</div>
+                <div class="menu-highlight-ingredients">Paste, sos de roșii, busuioc</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="menu-testimonials">
+      <div class="menu-testimonial-box">
+        <div class="menu-testimonial-icon">🍷</div>
+        <blockquote>„ Cina la restaurantul Marami a fost o experiență de neuitat! Mâncare excelentă, vinuri bune și o atmosferă relaxantă.”</blockquote>
+        <div class="menu-testimonial-author">Carmen Popescu<br><span>Constanța</span></div>
+      </div>
+      <div class="menu-testimonial-box">
+        <div class="menu-testimonial-icon">🍽️</div>
+        <blockquote>„Mulțumim pentru ospitalitate! Recomand cu drag meniul de prânz și deserturile casei.”</blockquote>
+        <div class="menu-testimonial-author">Mihai Ionescu<br><span>București</span></div>
+      </div>
+    </section>
+    <div class="menu-download">
+      <a href="#" class="btn-accent-outline">Descarcă meniul complet</a>
+    </div>
+  </main>
+  <script src="script.js"></script>
+</body>
+</html> 

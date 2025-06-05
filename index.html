@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="ro">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Hotel Marami</title>
+  <meta name="theme-color" content="#FAFAFA">
+  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
+</head>
+<body>
+  <header class="header" id="mainHeader">
+    <div class="container header-content">
+      <div class="logo">Hotel Marami</div>
+      <button class="burger" id="burgerBtn" aria-label="Deschide meniul" aria-expanded="false" aria-controls="navMenu">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+      <nav class="nav" id="navMenu">
+        <a href="index.html">Acasă</a>
+        <a href="despre-noi.html">Despre Noi</a>
+        <a href="camere.html">Camere</a>
+        <a href="meniu.html">Restaurant</a>
+        <div class="nav-contact">
+          <span class="phone-number">+40 722 123 456</span>
+          <a href="#rezerva" class="btn-accent rezervare-btn">Rezervă Acum</a>
+        </div>
+      </nav>
+      <div class="header-right">
+        <span class="phone-number">+40 722 123 456</span>
+        <a href="#rezerva" class="btn-accent rezervare-btn">Rezervă Acum</a>
+      </div>
+    </div>
+  </header>
+  <section class="hero">
+    <img src="img/heroBackground.png" alt="Hotel Marami" class="hero-bg">
+    <div class="hero-content">
+      <h1>Alege cazarea perfectă în Sinaia, aproape de tot ce contează</h1>
+      <p>Oferim tot ce ai nevoie pentru o vacanță fără stres: camere confortabile, mic dejun inclus, terasă, vedere spre munte și locație de top în Sinaia.</p>
+      <a href="#rezerva" class="btn-accent">Rezervă Acum</a>
+    </div>
+  </section>
+  <section class="split-section about-split">
+    <div class="split-section-inner">
+      <div class="split-section-left">
+        <div class="about-content-box">
+          <h2>Despre Hotel Marami</h2>
+          <p>Hotel Marami este alegerea ideală pentru cei care doresc să descopere Sinaia într-un cadru elegant, curat și primitor. Bucură-te de camere spațioase, priveliști superbe și servicii dedicate, la doar câțiva pași de Castelul Peleș.</p>
+          <a href="despre-noi.html" class="btn-accent-outline">Află mai multe</a>
+        </div>
+      </div>
+      <div class="split-section-right">
+        <img src="img/outsideview2.jpg" alt="Hotel Marami exterior">
+      </div>
+    </div>
+  </section>
+  <section class="rooms-full" id="camere">
+    <div class="rooms-full-split">
+      <div class="rooms-full-img">
+        <img id="roomMainImg" src="img/room1.jpg" alt="Camera Standard Hotel Marami">
+      </div>
+      <div class="rooms-full-info">
+        <span class="rooms-label">CAMERE</span>
+        <ul class="rooms-types">
+          <li class="room-type active" data-img="img/room1.jpg" data-title="Camera Standard" data-details="25 m² / 1 pat matrimonial / 2 persoane">
+            Camera Standard
+            <div class="room-short-details">25 m² / 1 pat matrimonial / 2 persoane</div>
+          </li>
+          <li class="room-type" data-img="img/room2.jpg" data-title="Camera Deluxe" data-details="32 m² / 1 pat king size / 2 persoane">
+            Camera Deluxe
+            <div class="room-short-details">32 m² / 1 pat king size / 2 persoane</div>
+          </li>
+          <li class="room-type" data-img="img/room3.jpg" data-title="Camera Premium" data-details="40 m² / 1 pat king size + zonă relaxare / 3 persoane">
+            Camera Premium
+            <div class="room-short-details">40 m² / 1 pat king size + zonă relaxare / 3 persoane</div>
+          </li>
+        </ul>
+        <a href="camere.html" class="btn-accent-outline">Vezi toate camerele</a>
+      </div>
+    </div>
+  </section>
+  <section class="split-section restaurant-split">
+    <div class="split-section-inner">
+      <div class="split-section-left">
+        <div class="restaurant-content-box">
+          <span class="restaurant-label">Eat & Drink</span>
+          <h2>Kitchen Club - O experiență culinară de zi și noapte</h2>
+          <p>Bucură-te de preparate proaspete, cu ingrediente locale, servite într-o atmosferă elegantă. Meniul nostru combină tradiția românească cu influențe internaționale.</p>
+          <ul class="restaurant-benefits">
+            <li>Mic dejun, ceai și cafea gratuite</li>
+            <li>Bucătărie complet utilată</li>
+          </ul>
+          <a href="meniu.html" class="btn-accent-outline">Vezi meniul</a>
+        </div>
+      </div>
+      <div class="split-section-right">
+        <img src="img/outsideTerrace.jpg" alt="Restaurant Hotel Marami">
+      </div>
+    </div>
+  </section>
+  <section class="split-section beneficii-split">
+    <div class="split-section-inner">
+      <div class="split-section-left">
+        <img src="img/outsideview.jpg" alt="Beneficii Hotel Marami">
+      </div>
+      <div class="split-section-right">
+        <div class="beneficii-content-box">
+          <span class="beneficii-label">BENEFICII</span>
+          <h2 class="beneficii-title">Fă-ți șederea memorabilă</h2>
+          <div class="beneficii-grid">
+            <div class="benefit-item">
+              <span class="benefit-icon">🚗</span>
+              <div>
+                <div class="benefit-title">Transfer aeroport</div>
+                <div class="benefit-desc">Ajungi la hotel în stil și confort</div>
+              </div>
+            </div>
+            <div class="benefit-item">
+              <span class="benefit-icon">📶</span>
+              <div>
+                <div class="benefit-title">WiFi rapid</div>
+                <div class="benefit-desc">Internet de mare viteză în toată locația</div>
+              </div>
+            </div>
+            <div class="benefit-item">
+              <span class="benefit-icon">🍳</span>
+              <div>
+                <div class="benefit-title">Mic dejun inclus</div>
+                <div class="benefit-desc">Preparate proaspete în fiecare dimineață</div>
+              </div>
+            </div>
+            <div class="benefit-item">
+              <span class="benefit-icon">🛏️</span>
+              <div>
+                <div class="benefit-title">Curățenie zilnică</div>
+                <div class="benefit-desc">Camerele sunt igienizate zilnic</div>
+              </div>
+            </div>
+            <div class="benefit-item">
+              <span class="benefit-icon">🅿️</span>
+              <div>
+                <div class="benefit-title">Parcare privată</div>
+                <div class="benefit-desc">Locuri de parcare gratuite pentru oaspeți</div>
+              </div>
+            </div>
+            <div class="benefit-item">
+              <span class="benefit-icon">🖥️</span>
+              <div>
+                <div class="benefit-title">Smart TV</div>
+                <div class="benefit-desc">Conținut online la un click distanță</div>
+              </div>
+            </div>
+          </div>
+          <a href="#rezerva" class="btn-accent-outline">Rezervă Acum</a>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="split-section reviews-split">
+    <div class="split-section-inner">
+      <div class="split-section-left reviews-left">
+        <span class="reviews-label">OASPEȚII NE RECOMANDĂ</span>
+        <blockquote class="review-quote">„ A fost minunat să stau la acest hotel! Personal foarte amabil, camere curate și frumoase, locație perfectă și o priveliște fantastică din cameră! Mâncarea și băuturile din restaurantul hotelului au fost delicioase. ”</blockquote>
+        <div class="reviewer-box">
+          <img src="img/avatar1.jpg" alt="Catherine Kastner" class="reviewer-avatar">
+          <div>
+            <div class="reviewer-name">Catherine Kastner</div>
+            <div class="reviewer-location">San Diego, California</div>
+          </div>
+        </div>
+        <div class="reviews-dots">
+          <span class="dot active"></span>
+          <span class="dot"></span>
+          <span class="dot"></span>
+        </div>
+      </div>
+      <div class="split-section-right reviews-right">
+        <span class="newsletter-label">NU RATA NOUTĂȚILE!</span>
+        <h2 class="newsletter-title">Abonează-te la newsletter pentru a primi oferte speciale, noutăți și evenimente.</h2>
+        <form class="newsletter-form">
+          <input type="email" placeholder="Adresa ta de email" required>
+          <button type="submit" aria-label="Abonează-te">
+            <span class="arrow">→</span>
+          </button>
+        </form>
+      </div>
+    </div>
+  </section>
+  <section class="split-section locatie-split">
+    <div class="split-section-inner">
+      <div class="split-section-left locatie-left">
+        <span class="locatie-label">LOCAȚIE</span>
+        <h2 class="locatie-title">Ne găsești aici</h2>
+        <div class="locatie-info">
+          <div class="locatie-adresa">
+            <strong>Hotel Marami</strong><br>
+            Strada Furnica 52, 106100 Sinaia, România
+          </div>
+          <div class="locatie-contact">
+            <div><strong>Telefon:</strong> <a href="tel:+40722123456">+40 722 123 456</a></div>
+            <div><strong>Email:</strong> <a href="mailto:rezervari@hotelmarami.ro">rezervari@hotelmarami.ro</a></div>
+          </div>
+        </div>
+      </div>
+      <div class="split-section-right locatie-right">
+        <div class="locatie-map-wrap">
+          <iframe class="locatie-map" src="https://www.google.com/maps?q=Hotel+Marami,+Strada+Furnica+52,+Sinaia,+Romania&output=embed" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+      </div>
+    </div>
+  </section>
+  <footer class="footer-main">
+    <div class="footer-content">
+      <div class="footer-col footer-logo">
+        <div class="footer-logo-text">Hotel Marami</div>
+        <div class="footer-logo-sub">Sinaia</div>
+      </div>
+      <div class="footer-col footer-contact">
+        <div class="footer-contact-item">E. <a href="mailto:rezervari@hotelmarami.ro">rezervari@hotelmarami.ro</a></div>
+        <div class="footer-contact-item">T. <a href="tel:+40722123456">+40 722 123 456</a></div>
+        <div class="footer-contact-item">Strada Furnica 52, 106100 Sinaia, România</div>
+      </div>
+      <div class="footer-col footer-social">
+        <a href="#" aria-label="Facebook" class="footer-social-link">
+          <svg width="22" height="22" fill="none" stroke="#1F1F1F" stroke-width="2" viewBox="0 0 24 24"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/></svg>
+        </a>
+        <a href="#" aria-label="Instagram" class="footer-social-link">
+          <svg width="22" height="22" fill="none" stroke="#1F1F1F" stroke-width="2" viewBox="0 0 24 24"><rect x="2" y="2" width="20" height="20" rx="5"/><circle cx="12" cy="12" r="5"/><circle cx="17.5" cy="6.5" r="1.5"/></svg>
+        </a>
+        <a href="#" aria-label="TripAdvisor" class="footer-social-link">
+          <svg width="22" height="22" fill="none" stroke="#1F1F1F" stroke-width="2" viewBox="0 0 24 24"><circle cx="7.5" cy="12" r="3.5"/><circle cx="16.5" cy="12" r="3.5"/><path d="M2 12l3-3 3 3-3 3-3-3zm20 0l-3-3-3 3 3 3 3-3z"/></svg>
+        </a>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <div class="footer-copyright">Copyright 2024 Hotel Marami</div>
+      <div class="footer-links">
+        <a href="#">Privacy Policy</a>
+        <span>|</span>
+        <a href="#">Sitemap</a>
+      </div>
+    </div>
+  </footer>
+  <section id="rezerva"></section>
+  <script src="script.js"></script>
+</body>
+</html> 
