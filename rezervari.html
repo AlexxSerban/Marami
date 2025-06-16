@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="ro">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Rezervări - Hotel Marami</title>
+  <meta name="theme-color" content="#FAFAFA">
+  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
+</head>
+<body>
+  <header class="header" id="mainHeader">
+    <div class="container header-content">
+      <div class="logo"><a href="index.html">Marami</a></div>
+      <button class="burger" id="burgerBtn" aria-label="Deschide meniul" aria-expanded="false" aria-controls="navMenu">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+      <nav class="nav" id="navMenu">
+        <a href="index.html">Acasă</a>
+        <a href="despre-noi.html">Despre Noi</a>
+        <a href="camere.html">Camere</a>
+        <a href="meniu.html">Restaurant</a>
+        <a href="rezervari.html" class="active">Rezervări</a>
+        <div class="nav-contact">
+          <span class="phone-number">+40 722 123 456</span>
+          <a href="#rezerva" class="btn-accent rezervare-btn">Rezervă Acum</a>
+        </div>
+      </nav>
+      <div class="header-right">
+        <span class="phone-number">+40 722 123 456</span>
+        <a href="#rezerva" class="btn-accent rezervare-btn">Rezervă Acum</a>
+      </div>
+    </div>
+  </header>
+  <main class="rezervari-main">
+    <section class="rezervari-hero">
+      <p class="rezervari-hero-intro">Ai nevoie de ajutor cu rezervarea online, ai o întrebare sau vrei mai multe informații? Scrie-ne direct!</p>
+      <h1>Rezervări prin telefon sau email</h1>
+      <div class="rezervari-hero-contact">
+        <div>Telefon: <a href="tel:+40722123456">+40 722 123 456</a></div>
+        <div>Email: <a href="mailto:rezervari@hotelmarami.ro">rezervari@hotelmarami.ro</a></div>
+      </div>
+    </section>
+    <section class="rezervari-form-section">
+      <div class="rezervari-form-img">
+        <img src="img/room1.jpg" alt="Hotel Marami camera" />
+      </div>
+      <form class="rezervari-form">
+        <div class="rezervari-form-title">Contactează-ne</div>
+        <div class="rezervari-form-desc">Completează formularul și un membru al echipei te va contacta în cel mai scurt timp.</div>
+        <div class="rezervari-form-group">
+          <label for="nume">Numele tău</label>
+          <input type="text" id="nume" name="nume" required>
+        </div>
+        <div class="rezervari-form-group">
+          <label for="email">Email</label>
+          <input type="email" id="email" name="email" required>
+        </div>
+        <div class="rezervari-form-group">
+          <label for="telefon">Telefon</label>
+          <input type="tel" id="telefon" name="telefon" required>
+        </div>
+        <div class="rezervari-form-group">
+          <label for="subiect">Subiect</label>
+          <input type="text" id="subiect" name="subiect">
+        </div>
+        <div class="rezervari-form-row">
+          <div class="rezervari-form-group">
+            <label for="checkin">Data check-in</label>
+            <input type="date" id="checkin" name="checkin" required>
+          </div>
+          <div class="rezervari-form-group">
+            <label for="checkout">Data check-out</label>
+            <input type="date" id="checkout" name="checkout" required>
+          </div>
+        </div>
+        <div class="rezervari-form-group">
+          <label for="persoane">Număr persoane</label>
+          <input type="number" id="persoane" name="persoane" min="1" max="10" required>
+        </div>
+        <div class="rezervari-form-group">
+          <label for="mesaj">Mesajul tău (opțional)</label>
+          <textarea id="mesaj" name="mesaj" rows="3"></textarea>
+        </div>
+        <button type="submit" class="btn-accent rezervare-btn">Trimite</button>
+        <div class="rezervari-confirmare" style="display:none;">Mesajul a fost trimis! Vă vom contacta în curând.</div>
+      </form>
+    </section>
+  </main>
+  <footer class="footer-main">
+    <div class="footer-content">
+      <div class="footer-col footer-logo">
+        <div class="footer-logo-text">Hotel Marami</div>
+        <div class="footer-logo-sub">Sinaia</div>
+        <p class="footer-logo-desc">O destinație de suflet în inima Sinaiei.</p>
+      </div>
+      <div class="footer-col footer-contact">
+        <div class="footer-contact-title">Contact</div>
+        <div class="footer-contact-item"><strong>Email:</strong> <a href="mailto:rezervari@hotelmarami.ro">rezervari@hotelmarami.ro</a></div>
+        <div class="footer-contact-item"><strong>Telefon:</strong> <a href="tel:+40722123456">+40 722 123 456</a></div>
+      </div>
+      <div class="footer-col footer-address">
+        <div class="footer-address-title">Adresă</div>
+        <div class="footer-contact-item">Strada Furnica 52, 106100 Sinaia, România</div>
+      </div>
+      <div class="footer-col footer-social">
+        <div class="footer-social-title">Social</div>
+        <div class="footer-social-links">
+          <a href="#" aria-label="Facebook" class="footer-social-link">
+            <svg width="22" height="22" fill="none" stroke="#1F1F1F" stroke-width="2" viewBox="0 0 24 24"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/></svg>
+          </a>
+          <a href="#" aria-label="Instagram" class="footer-social-link">
+            <svg width="22" height="22" fill="none" stroke="#1F1F1F" stroke-width="2" viewBox="0 0 24 24"><rect x="2" y="2" width="20" height="20" rx="5"/><circle cx="12" cy="12" r="5"/><circle cx="17.5" cy="6.5" r="1.5"/></svg>
+          </a>
+          <a href="#" aria-label="TripAdvisor" class="footer-social-link">
+            <svg width="22" height="22" fill="none" stroke="#1F1F1F" stroke-width="2" viewBox="0 0 24 24"><circle cx="7.5" cy="12" r="3.5"/><circle cx="16.5" cy="12" r="3.5"/><path d="M2 12l3-3 3 3-3 3-3-3zm20 0l-3-3-3 3 3 3 3-3z"/></svg>
+          </a>
+        </div>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <div class="footer-copyright">Copyright 2025 Hotel Marami</div>
+      <div class="footer-links">
+        <a href="#">Privacy Policy</a>
+        <span>|</span>
+        <a href="#">Sitemap</a>
+      </div>
+    </div>
+  </footer>
+  <script src="script.js"></script>
+</body>
+</html> 
