@@ -365,14 +365,28 @@ p, li, span, .benefit-title, .benefit-desc, .room-short-details, .restaurant-ben
     font-size: 2.2rem;
   }
   .header-content {
-    display: flex;
-    flex-direction: column;
-    gap: 1rem;
-    width: 100%;
-    max-width: 100%;
-    box-sizing: border-box;
-    padding: 1.2rem 5vw 1.2rem 5vw;
-    padding-right: 5vw;
+    display: flex !important;
+    flex-direction: row !important;
+    align-items: center !important;
+    justify-content: space-between !important;
+    padding: 1.2rem 3vw 1.2rem 3vw !important;
+    gap: 0 !important;
+  }
+  .logo {
+    order: 1;
+  }
+  #burgerBtn {
+    order: 2;
+    margin-left: auto;
+    margin-right: 0;
+    position: relative;
+    z-index: 20;
+  }
+  .nav {
+    order: 3;
+  }
+  .header-right {
+    order: 4;
   }
   .nav {
     gap: 1.2rem;
@@ -1475,16 +1489,20 @@ body.menu-open {
 .beneficii-grid {
   display: grid;
   grid-template-columns: 1fr 1fr;
+  grid-template-rows: repeat(3, minmax(80px, auto));
   row-gap: 2rem;
   column-gap: 4rem;
   width: 100%;
   margin-bottom: 1.5rem;
   justify-items: flex-start;
+  align-items: start;
 }
 .benefit-item {
   display: flex;
   align-items: flex-start;
   gap: 1.1rem;
+  padding-top: 0;
+  margin-top: -8px;
 }
 .benefit-icon {
   font-size: 2.1rem;
@@ -1499,8 +1517,9 @@ body.menu-open {
   font-weight: 700;
   color: #fff;
   font-family: 'Inter', Arial, sans-serif;
-  margin-bottom: 0.3rem;
+  margin-bottom: 0.2rem;
   line-height: 1.2;
+  padding-top: 0.15rem;
 }
 .benefit-desc {
   font-size: 1.01rem;
@@ -1520,16 +1539,19 @@ body.menu-open {
   font-weight: 700;
   margin-top: 1.2rem;
   box-shadow: 0 4px 16px rgba(46, 125, 95, 0.13);
-  transition: background 0.2s, color 0.2s, box-shadow 0.2s, transform 0.2s;
+  transition: all 0.3s ease;
   position: relative;
-  overflow: hidden;
   z-index: 1;
+}
+.beneficii-split .btn-accent-outline::before {
+  display: none;
 }
 .beneficii-split .btn-accent-outline:hover,
 .beneficii-split .btn-accent-outline:focus {
-  color: #fff;
-  background: #25664b;
-  border-color: #fff;
+  color: #2E7D5F;
+  background: #000;
+  border-color: #000;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
 }
 @media (max-width: 900px) {
   .beneficii-split .split-section-right {
@@ -1539,8 +1561,29 @@ body.menu-open {
     font-size: 1.5rem;
   }
   .beneficii-grid {
+    display: grid !important;
+    grid-template-columns: 1fr 1fr !important;
+    gap: 1.7rem 0.7rem;
+    column-gap: 1.7rem;
+    width: 100%;
+    max-width: 600px;
+    margin-bottom: 2.5rem;
+    justify-items: center;
+  }
+  .benefit-item {
+    width: auto !important;
+    max-width: 240px;
+    justify-content: flex-start;
+  }
+}
+@media (max-width: 500px) {
+  .beneficii-grid {
     grid-template-columns: 1fr;
-    gap: 1.1rem;
+    gap: 1.2rem 0;
+  }
+  .benefit-item {
+    max-width: 100%;
+    justify-content: center;
   }
 }
 
@@ -1618,8 +1661,12 @@ body.menu-open {
 }
 .reviews-dots {
   display: flex;
-  gap: 0.6rem;
-  margin-top: 1.2rem;
+  gap: 0.5rem;
+  justify-content: center;
+  align-items: center;
+  margin-top: 1.5rem;
+  margin-bottom: 0.5rem;
+  padding-bottom: 2rem;
 }
 .reviews-dots .dot {
   width: 8px;
@@ -1845,7 +1892,14 @@ body.menu-open {
     flex: 1 1 100%;
   }
   .locatie-map-wrap, .locatie-map {
-    min-height: 220px;
+    min-height: 320px !important;
+    width: 100vw !important;
+    left: 50%;
+    right: 50%;
+    margin-left: -50vw;
+    margin-right: -50vw;
+    position: relative;
+    border-radius: 0 !important;
   }
 }
 
@@ -1974,10 +2028,25 @@ body.menu-open {
   }
   .footer-bottom {
     flex-direction: column;
-    gap: 0.7rem;
-    padding: 1.1rem 5vw 0 5vw;
-    font-size: 0.98rem;
+    align-items: center;
+    gap: 0.5rem;
+    padding: 1.1rem 0 0 0;
+    font-size: 0.95rem;
     width: 100vw;
+    margin: 0;
+    border-top: 1px solid #ece9ef;
+    text-align: center;
+  }
+  .footer-copyright {
+    text-align: center;
+    width: 100%;
+  }
+  .footer-links {
+    flex-direction: column;
+    gap: 0.2rem;
+    align-items: center;
+    margin-top: 0.2rem;
+    text-align: center;
   }
 }
 
@@ -3413,6 +3482,308 @@ body.menu-open {
   .rezervari-form-row {
     flex-direction: column;
     gap: 0.7rem;
+  }
+}
+
+#burgerBtn {
+  display: none;
+}
+@media (max-width: 900px) {
+  #burgerBtn {
+    display: flex;
+  }
+  .nav {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background: rgba(250,250,250,0.97);
+    gap: 2.5rem;
+    transform: translateY(-100%);
+    opacity: 0;
+    pointer-events: none;
+    transition: transform 0.3s, opacity 0.3s;
+    z-index: 15;
+  }
+  .nav.open {
+    transform: translateY(0);
+    opacity: 1;
+    pointer-events: auto;
+  }
+  .header-right {
+    display: none !important;
+  }
+}
+@media (min-width: 901px) {
+  #burgerBtn {
+    display: none !important;
+  }
+  .nav {
+    display: flex !important;
+    flex: 1 1 0;
+    justify-content: center;
+    align-items: center;
+    gap: 2.5rem;
+    order: 2;
+  }
+  .header-right {
+    display: flex !important;
+    align-items: center;
+    gap: 1.2rem;
+    justify-content: flex-end;
+    margin-left: auto;
+    order: 3;
+  }
+  .logo {
+    order: 1;
+  }
+  .header-content {
+    display: flex !important;
+    flex-direction: row !important;
+    align-items: center !important;
+    justify-content: space-between !important;
+    width: 100%;
+    max-width: 100%;
+    box-sizing: border-box;
+    padding: 1.2rem 3vw 1.2rem 3vw !important;
+    gap: 0 !important;
+  }
+}
+
+/* HERO MODERN RESPONSIVE - MOBILE/TABLETĂ */
+@media (max-width: 900px) {
+  .hero-modern {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    padding: 2.5rem 1rem 2rem 1rem;
+    text-align: center;
+    overflow: hidden;
+  }
+  .hero-modern .hero-bg {
+    position: absolute;
+    top: 0; left: 0; width: 100%; height: 100%;
+    object-fit: cover;
+    z-index: 1;
+    filter: brightness(0.7);
+  }
+  .hero-modern .hero-overlay {
+    position: absolute;
+    top: 0; left: 0; width: 100%; height: 100%;
+    background: rgba(0,0,0,0.35);
+    z-index: 2;
+  }
+  .hero-content-modern {
+    position: relative;
+    z-index: 3;
+    width: 100%;
+    max-width: 420px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 0;
+  }
+  .hero-content-modern h1 {
+    font-size: 2.1rem;
+    color: #fff;
+    font-family: 'Playfair Display', serif;
+    margin-bottom: 1.2rem;
+    font-weight: 700;
+    line-height: 1.2;
+  }
+  .hero-content-modern p {
+    color: #fff;
+    font-size: 1.08rem;
+    line-height: 1.5;
+    max-width: 400px;
+    margin: 0 auto 2rem auto;
+    font-weight: 400;
+  }
+  .hero-card-review {
+    position: static;
+    background: rgba(255,255,255,0.92);
+    border: 1.5px solid #2E7D5F;
+    box-shadow: 0 4px 24px rgba(46,125,95,0.10);
+    padding: 1.1rem 1.6rem 1rem 1.6rem;
+    margin: 2rem 0 0 0;
+    border-radius: 12px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.5rem;
+    z-index: 3;
+  }
+  .review-rating, .review-score, .review-stars, .review-count {
+    color: #2E7D5F !important;
+  }
+}
+
+@media (max-width: 900px) {
+  .hero-buttons {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    gap: 1.2rem;
+    margin-top: 2.2rem;
+    align-items: center;
+    justify-content: center;
+  }
+  .hero-modern .btn-cta,
+  .hero-modern .btn-secondary {
+    width: auto;
+    min-width: 120px;
+    max-width: 100%;
+    padding: 1rem 1.5rem;
+    border-radius: 12px;
+    font-size: 1.15rem;
+    font-weight: 600;
+    margin: 0;
+  }
+}
+
+@media (max-width: 900px) {
+  .beneficii-content-box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 2.2rem 0.5rem 2.5rem 0.5rem;
+    width: 100%;
+    max-width: 420px;
+    margin: 0 auto;
+  }
+  .beneficii-title {
+    font-size: 1.4rem;
+    margin-bottom: 2rem;
+    color: #fff;
+  }
+  .beneficii-grid {
+    display: flex;
+    flex-direction: column;
+    gap: 1.7rem;
+    width: 100%;
+    margin-bottom: 2.5rem;
+  }
+  .benefit-item {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 1.2rem;
+    width: 100%;
+  }
+  .benefit-icon {
+    flex-shrink: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 38px;
+    height: 38px;
+  }
+  .benefit-title {
+    font-size: 1.08rem;
+    font-weight: 700;
+    color: #fff;
+    margin-bottom: 0.1rem;
+    text-align: left;
+  }
+  .benefit-desc {
+    font-size: 0.98rem;
+    color: #fff;
+    opacity: 0.95;
+    text-align: left;
+    max-width: 220px;
+  }
+  .btn-accent-outline {
+    width: 100%;
+    max-width: 320px;
+    margin: 2.2rem auto 0 auto;
+    display: block;
+    font-size: 1.08rem;
+    padding: 1rem 0;
+    border-radius: 12px;
+    font-weight: 600;
+  }
+}
+
+@media (max-width: 900px) {
+  .newsletter-label {
+    padding-top: 2rem;
+  }
+}
+
+.beneficii-split .beneficii-label {
+  color: #fff !important;
+}
+
+@media (max-width: 900px) {
+  .footer-main {
+    padding: 2.5rem 0.5rem 1.2rem 0.5rem;
+    width: 100vw;
+    margin: 0;
+    border-radius: 0;
+  }
+  .footer-content {
+    flex-direction: column;
+    align-items: center;
+    gap: 1.5rem;
+    padding: 0;
+    width: 100vw;
+  }
+  .footer-col {
+    align-items: center;
+    text-align: center;
+    gap: 0.5rem;
+    margin-bottom: 0.7rem;
+  }
+  .footer-logo-text {
+    font-size: 1.6rem;
+    margin-bottom: 0.2rem;
+  }
+  .footer-logo-sub {
+    font-size: 1rem;
+    margin-bottom: 0.2rem;
+  }
+  .footer-logo-desc {
+    font-size: 0.98rem;
+    color: #888;
+    margin-bottom: 1.1rem;
+  }
+  .footer-contact-title, .footer-address-title, .footer-social-title {
+    font-size: 1.08rem;
+    font-weight: 700;
+    margin-top: 1.1rem;
+    margin-bottom: 0.2rem;
+    color: #1F1F1F;
+  }
+  .footer-contact-item, .footer-address-title, .footer-social-title {
+    font-size: 1.01rem;
+    color: #1F1F1F;
+    margin-bottom: 0.2rem;
+  }
+  .footer-social {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 0.3rem;
+    margin: 1.1rem 0 0.7rem 0;
+  }
+  .footer-social-title {
+    margin-bottom: 0.5rem;
+  }
+  .footer-social-links {
+    flex-direction: row;
+    gap: 1.2rem;
   }
 }
   
