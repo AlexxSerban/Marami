@@ -1,5 +1,41 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&family=Montserrat:wght@600;700&family=Cormorant+Garamond:wght@700&display=swap');
 
+html, body {
+  overflow-x: hidden;
+  width: 100vw;
+}
+
+.hero-modern,
+.split-section,
+.rooms-full,
+footer,
+header {
+  width: 100vw;
+  max-width: 100vw;
+  box-sizing: border-box;
+}
+
+@media (max-width: 900px) {
+  .container,
+  .header-content,
+  .hero-modern,
+  .split-section,
+  .rooms-full,
+  footer,
+  header {
+    width: 100vw !important;
+    max-width: 100vw !important;
+    margin: 0 !important;
+    padding-left: 0 !important;
+    padding-right: 0 !important;
+    box-sizing: border-box;
+  }
+  body {
+    padding: 0 !important;
+    margin: 0 !important;
+  }
+}
+
 body {
   background: #FAFAFA;
   color: #1F1F1F;
