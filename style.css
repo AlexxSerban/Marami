@@ -3012,11 +3012,25 @@ body.menu-open {
   border: none;
   text-decoration: none;
   transition: background 0.2s, box-shadow 0.2s, transform 0.2s;
+  position: relative;
+  overflow: hidden;
+  z-index: 1;
+}
+.hero-modern .btn-cta::before {
+  content: '';
+  position: absolute;
+  left: 0; right: 0; bottom: 0; top: 100%;
+  background: #fff;
+  z-index: -1;
+  transition: top 0.35s cubic-bezier(.4,0,.2,1);
 }
 .hero-modern .btn-cta:hover {
-  background: #25664b;
+  color: #2E7D5F;
   box-shadow: 0 4px 16px rgba(46,125,95,0.18);
   transform: translateY(-2px) scale(1.04);
+}
+.hero-modern .btn-cta:hover::before {
+  top: 0;
 }
 .hero-modern .btn-secondary {
   background: #fff;
@@ -3029,12 +3043,25 @@ body.menu-open {
   border: 2px solid #2E7D5F;
   transition: background 0.2s, color 0.2s, box-shadow 0.2s, transform 0.2s;
   box-shadow: 0 2px 12px rgba(46,125,95,0.08);
+  position: relative;
+  overflow: hidden;
+  z-index: 1;
+}
+.hero-modern .btn-secondary::before {
+  content: '';
+  position: absolute;
+  left: 0; right: 0; bottom: 0; top: 100%;
+  background: #2E7D5F;
+  z-index: -1;
+  transition: top 0.35s cubic-bezier(.4,0,.2,1);
 }
 .hero-modern .btn-secondary:hover {
-  background: #2E7D5F;
   color: #fff;
   border-color: #25664b;
   transform: translateY(-2px) scale(1.04);
+}
+.hero-modern .btn-secondary:hover::before {
+  top: 0;
 }
 .hero-card-review {
   position: absolute;

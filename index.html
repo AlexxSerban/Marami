@@ -7,6 +7,7 @@
   <meta name="theme-color" content="#FAFAFA">
   <link rel="stylesheet" href="style.css">
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet">
 </head>
 <body>
   <header class="header" id="mainHeader">
@@ -32,16 +33,16 @@
   </header>
   <section class="hero-modern">
     <div class="hero-overlay"></div>
-    <img src="img/heroBackground.png" alt="Hotel Marami" class="hero-bg">
+    <img src="img/heroBackground.png" alt="Hotel Marami" class="hero-bg" data-aos="fade-in" data-aos-duration="2500" data-aos-delay="100">
     <div class="hero-content-modern">
-      <h1><span style="color:#fff">Transformă-ți șederea</span><br><span style="color:#fff">într-o</span> <span class="highlight">experiență memorabilă</span></h1>
-      <p>Oferim tot ce ai nevoie pentru o vacanță fără stres: camere confortabile, mic dejun inclus, terasă, vedere spre munte și locație de top în Sinaia.</p>
-      <div class="hero-buttons">
+      <h1 data-aos="fade-up" data-aos-duration="1000"><span style="color:#fff">Transformă-ți șederea</span><br><span style="color:#fff">într-o</span> <span class="highlight">experiență memorabilă</span></h1>
+      <p data-aos="fade-up" data-aos-delay="200" data-aos-duration="1000">Oferim tot ce ai nevoie pentru o vacanță fără stres: camere confortabile, mic dejun inclus, terasă, vedere spre munte și locație de top în Sinaia.</p>
+      <div class="hero-buttons" data-aos="fade-up" data-aos-delay="400" data-aos-duration="1000">
         <a href="#rezerva" class="btn-cta"><span>Rezervă Acum</span> <span class="arrow">→</span></a>
         <a href="#despre" class="btn-secondary">Află mai multe</a>
       </div>
     </div>
-    <div class="hero-card-review">
+    <div class="hero-card-review" data-aos="fade-left" data-aos-delay="600" data-aos-duration="1000">
       <div class="review-rating">
         <span class="review-score">4.9</span>
         <span class="review-stars">★★★★★</span>
@@ -52,7 +53,7 @@
   <section class="split-section about-split">
     <div class="split-section-inner">
       <div class="split-section-left">
-        <div class="about-content-box">
+        <div class="about-content-box" data-aos="fade-right" data-aos-duration="800">
           <span class="about-label">DESPRE</span>
           <h2>Despre Hotel Marami</h2>
           <p>Hotel Marami este alegerea ideală pentru cei care doresc să descopere Sinaia într-un cadru elegant, curat și primitor. Bucură-te de camere spațioase, priveliști superbe și servicii dedicate, la doar câțiva pași de Castelul Peleș.</p>
@@ -60,16 +61,16 @@
         </div>
       </div>
       <div class="split-section-right">
-        <img src="img/outsideview2.jpg" alt="Hotel Marami exterior">
+        <img src="img/outsideview2.jpg" alt="Hotel Marami exterior" data-aos="fade-left" data-aos-duration="800">
       </div>
     </div>
   </section>
   <section class="rooms-full" id="camere">
     <div class="rooms-full-split">
       <div class="rooms-full-img">
-        <img id="roomMainImg" src="img/room1.jpg" alt="Camera Standard Hotel Marami">
+        <img id="roomMainImg" src="img/room1.jpg" alt="Camera Standard Hotel Marami" data-aos="zoom-in" data-aos-duration="800">
       </div>
-      <div class="rooms-full-info">
+      <div class="rooms-full-info" data-aos="fade-up" data-aos-duration="800">
         <span class="rooms-label">CAMERE</span>
         <ul class="rooms-types">
           <li class="room-type active" data-img="img/room1.jpg" data-title="Camera Standard" data-details="25 m² / 1 pat matrimonial / 2 persoane">
@@ -92,7 +93,7 @@
   <section class="split-section restaurant-split">
     <div class="split-section-inner">
       <div class="split-section-left">
-        <div class="restaurant-content-box">
+        <div class="restaurant-content-box" data-aos="fade-right" data-aos-duration="800">
           <span class="restaurant-label">Eat & Drink</span>
           <h2>Kitchen Club - O experiență culinară de zi și noapte</h2>
           <p>Bucură-te de preparate proaspete, cu ingrediente locale, servite într-o atmosferă elegantă. Meniul nostru combină tradiția românească cu influențe internaționale.</p>
@@ -104,21 +105,21 @@
         </div>
       </div>
       <div class="split-section-right">
-        <img src="img/outsideTerrace.jpg" alt="Restaurant Hotel Marami">
+        <img src="img/outsideTerrace.jpg" alt="Restaurant Hotel Marami" data-aos="fade-left" data-aos-duration="800">
       </div>
     </div>
   </section>
   <section class="split-section beneficii-split">
     <div class="split-section-inner">
       <div class="split-section-left">
-        <img src="img/outsideview.jpg" alt="Beneficii Hotel Marami">
+        <img src="img/outsideview.jpg" alt="Beneficii Hotel Marami" data-aos="fade-left" data-aos-duration="800">
       </div>
       <div class="split-section-right">
-        <div class="beneficii-content-box">
+        <div class="beneficii-content-box" data-aos="fade-right" data-aos-duration="800">
           <span class="beneficii-label">BENEFICII</span>
           <h2 class="beneficii-title">Fă-ți șederea memorabilă</h2>
           <div class="beneficii-grid">
-            <div class="benefit-item">
+            <div class="benefit-item" data-aos="fade-up" data-aos-delay="100" data-aos-duration="600">
               <span class="benefit-icon">
                 <svg width="32" height="32" fill="none" stroke="#fff" stroke-width="2" viewBox="0 0 24 24"><polygon points="3 11 22 2 13 21 11 13 3 11"/></svg>
               </span>
@@ -127,7 +128,7 @@
                 <div class="benefit-desc">Ajungi la hotel în stil și confort</div>
               </div>
             </div>
-            <div class="benefit-item">
+            <div class="benefit-item" data-aos="fade-up" data-aos-delay="200" data-aos-duration="600">
               <span class="benefit-icon">
                 <svg width="32" height="32" fill="none" stroke="#fff" stroke-width="2" viewBox="0 0 24 24"><circle cx="12" cy="12" r="2"/><path d="M16.24 7.76a6 6 0 0 1 0 8.48"/><path d="M7.76 7.76a6 6 0 0 0 0 8.48"/><path d="M12 2v2"/><path d="M12 20v2"/><path d="M2 12h2"/><path d="M20 12h2"/></svg>
               </span>
@@ -136,7 +137,7 @@
                 <div class="benefit-desc">Internet de mare viteză în toată locația</div>
               </div>
             </div>
-            <div class="benefit-item">
+            <div class="benefit-item" data-aos="fade-up" data-aos-delay="300" data-aos-duration="600">
               <span class="benefit-icon">
                 <svg width="32" height="32" fill="none" stroke="#fff" stroke-width="2" viewBox="0 0 24 24"><path d="M18 8a4 4 0 0 1-8 0"/><line x1="2" y1="20" x2="22" y2="20"/><path d="M6 20V8a6 6 0 0 1 12 0v12"/></svg>
               </span>
@@ -145,7 +146,7 @@
                 <div class="benefit-desc">Preparate proaspete în fiecare dimineață</div>
               </div>
             </div>
-            <div class="benefit-item">
+            <div class="benefit-item" data-aos="fade-up" data-aos-delay="400" data-aos-duration="600">
               <span class="benefit-icon">
                 <svg width="32" height="32" fill="none" stroke="#fff" stroke-width="2" viewBox="0 0 24 24"><polyline points="9 11 12 14 22 4"/><rect x="2" y="2" width="20" height="20" rx="5" ry="5"/></svg>
               </span>
@@ -154,7 +155,7 @@
                 <div class="benefit-desc">Camerele sunt igienizate zilnic</div>
               </div>
             </div>
-            <div class="benefit-item">
+            <div class="benefit-item" data-aos="fade-up" data-aos-delay="500" data-aos-duration="600">
               <span class="benefit-icon">
                 <svg width="32" height="32" fill="none" stroke="#fff" stroke-width="2" viewBox="0 0 24 24"><rect x="1" y="3" width="15" height="13"/><polygon points="16 8 20 8 23 11 23 16 16 16 16 8"/></svg>
               </span>
@@ -163,7 +164,7 @@
                 <div class="benefit-desc">Locuri de parcare gratuite pentru oaspeți</div>
               </div>
             </div>
-            <div class="benefit-item">
+            <div class="benefit-item" data-aos="fade-up" data-aos-delay="600" data-aos-duration="600">
               <span class="benefit-icon">
                 <svg width="32" height="32" fill="none" stroke="#fff" stroke-width="2" viewBox="0 0 24 24"><rect x="2" y="7" width="20" height="15" rx="2"/><rect x="7" y="2" width="10" height="5" rx="1"/></svg>
               </span>
@@ -180,7 +181,7 @@
   </section>
   <section class="split-section reviews-split">
     <div class="split-section-inner">
-      <div class="split-section-left reviews-left">
+      <div class="split-section-left reviews-left" data-aos="fade-right" data-aos-duration="800">
         <span class="reviews-label">OASPEȚII NE RECOMANDĂ</span>
         <blockquote class="review-quote">„ A fost minunat să stau la acest hotel! Personal foarte amabil, camere curate și frumoase, locație perfectă și o priveliște fantastică din cameră! Mâncarea și băuturile din restaurantul hotelului au fost delicioase. ”</blockquote>
         <div class="reviewer-box">
@@ -196,7 +197,7 @@
           <span class="dot"></span>
         </div>
       </div>
-      <div class="split-section-right reviews-right">
+      <div class="split-section-right reviews-right" data-aos="fade-left" data-aos-duration="800">
         <span class="newsletter-label">NU RATA NOUTĂȚILE!</span>
         <h2 class="newsletter-title">Abonează-te la newsletter pentru a primi oferte speciale, noutăți și evenimente.</h2>
         <form class="newsletter-form">
@@ -210,7 +211,7 @@
   </section>
   <section class="split-section locatie-split">
     <div class="split-section-inner">
-      <div class="split-section-left locatie-left">
+      <div class="split-section-left locatie-left" data-aos="fade-right" data-aos-duration="800">
         <span class="locatie-label">LOCAȚIE</span>
         <h2 class="locatie-title">Ne găsești aici</h2>
         <div class="locatie-info">
@@ -225,7 +226,7 @@
         </div>
       </div>
       <div class="split-section-right locatie-right">
-        <div class="locatie-map-wrap">
+        <div class="locatie-map-wrap" data-aos="zoom-in" data-aos-duration="800">
           <iframe class="locatie-map" src="https://www.google.com/maps?q=Hotel+Marami,+Strada+Furnica+52,+Sinaia,+Romania&output=embed" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
         </div>
       </div>
@@ -273,5 +274,14 @@
   </footer>
   <section id="rezerva"></section>
   <script src="script.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+  <script>
+    AOS.init({
+      duration: 800, // durata animației (în ms)
+      once: true,    // animația rulează o singură dată la scroll
+      offset: 100,   // offset pentru când începe animația
+      easing: 'ease-out-cubic' // tipul de easing
+    });
+  </script>
 </body>
 </html> 
